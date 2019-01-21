@@ -34,30 +34,40 @@ header{
   height: 45px;
   width:200px ;
    margin-top: 50px;
-  margin-left:115px;
+  margin-left:40px;
+  margin-right: 115px;
   font-size: 22px;
-
-  
+  background-color: rgba( 0,0,0,.1);
+  color: #fff;
 }
 
 .list{
 
-margin-top: 60px;
+margin-top: 50px;
 margin-left:  1195px;
 }
-.list ul>li{
+.list select{
   height: 50px;
   width: 50px;
   border: 1px solid #fce205;
   color: #999999;
   text-align: center;
+  background-color: rgba( 0,0,0,.1);
+  
 }
 .list ul li a{
  padding: 20px;
 }
-ul{
-  list-style-type: none;
+.list option{
+  font-size: 17px;
+  color: #fce205;
+ margin: 10px;
+ border: 3px solid #fce205;
+ background-color: rgba( 0,0,0,.1);
 }
+/* ul{
+  list-style-type: none;
+} */
 .discript h1{
   display: flex;
   justify-content: center;
@@ -198,10 +208,11 @@ justify-content: space-around;
   justify-content: center;
 }
 .inline-list li{
-  width: 300px;
-  margin:0 165px 0 165px;
+  width: 400px;
+  margin:0 115px 0 115px;
   font-size: 26px;
  justify-content: space-around;
+ 
  
 }
 /* end block3 */
@@ -292,6 +303,7 @@ section div input:valid ~ label {
   font-size: 22px;
   left: 0;
   top: -22px;
+  text-transform: uppercase;
 }
 section input[type="submit"] {
   
@@ -372,7 +384,7 @@ justify-content: space-around;
 }
 #block6{
 display: flex;
-height: 2400px;
+height: 1983px;
 width: 100%;
 background-color: #080808;
 flex-direction: column;
@@ -417,7 +429,7 @@ flex-direction: column;
 .tab{
   background:#080808;
   display: inline;
-  margin: auto;
+  margin: 0px 490px 0px 490px;
 
 
 }
@@ -757,3 +769,48 @@ padding-top: 55px;
   padding-top: 55px;
 }
 /* end block9 */
+/* star block10 */
+#block10{
+  height: 520px;
+  width: 100%;
+  background: #080808;
+  color: #fff;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+.info{
+  float: left;
+  padding-top: 300px;
+  display: flex;
+}
+.logos{
+  padding-left: 115px;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.social{
+  float: right;
+  padding-right: 115px;
+  padding-top: 300px;
+  
+  
+}
+.email{
+  font-size: 22px;
+  padding-left: 160px;
+  margin: 16px;
+}
+.fab{
+  color: #fff;
+  font-size: 25px;
+}
+.social>a{
+  padding-right: 55px;
+  color: #ffffff;
+}
+.fab:hover{
+  color:#fce205;
+}
+/* end block10 */

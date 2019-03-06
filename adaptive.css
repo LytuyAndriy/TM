@@ -1,0 +1,68 @@
+@media all and (max-width:540px) {
+    .box2discript1 h4{
+      font-size: 20px;
+      padding-left: 30px;
+    }
+    .box2discript1 h1{
+      font-size: 20px;
+      padding-left: 30px;
+    }
+    .box2discript2 h4{
+      font-size: 20px;
+      padding-left: 30px;
+    }
+    .box2discript2 h1{
+      font-size: 20px;
+      padding-left: 30px;
+    }
+    .man{
+      width: 100vw auto;
+      height: 100vh;
+      background-position: center;
+    }
+    #block3 .inline-list ul {
+      display: block;
+      flex-direction: column;
+      margin: 0;
+      /* float: left; */
+    }
+    .inline-list li{
+      float: right;
+    }
+  }
+  /* 768px => 1140px */
+  @media(min-width:768px) and (max-width:1140px) {
+    #conteiner-one{
+    margin: 0px;
+    padding:0px;}
+    #conteiner-one .discript h1 {
+font-size: 46px;
+line-height: 58px;
+    }
+    #conteiner-one .discript h4{
+       font-size: 22px; 
+    }
+/* selector Tarasa */
+    .list section{
+        font-size:10px;
+    }
+    .list option:hover{
+     color:#fce205 ;
+        font-size:12px;
+    }
+    #price{
+  font-size: 16px;
+  width: 186px;
+  height:44px;
+  justify-content: center;
+    }
+    .btn-phone{
+      font-size: 10px;
+      width: 144px;
+      height:30px ;
+  }
+  }
+
+
+
+  @media (max-width:960px) {}

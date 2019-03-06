@@ -1,13 +1,17 @@
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+$(document).ready(function(){
+  // початок випадаючого списку
+    $(".dropdown").click(function(){
+      $(".menu").toggleClass("showMenu");
+        $(".menu > li").click(function(){
+          $(".dropdown > p").html($(this).html());
+            $(".menu").removeClass("showMenu");
+        });
+    });
+    // початок форми
+    $('input').change(function() {
+      if($(this).val())
+          $(this).addClass('has_value');
+        else
+          $(this).removeClass('has_value');
+    });
+  });

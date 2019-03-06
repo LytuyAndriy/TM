@@ -4,56 +4,80 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
-	<link rel="stylesheet" href="style.css">
-	
+	<link type="text/css" rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="adaptive.css">
+	<link type="text/css" rel="stylesheet" href="bootstrap.css">
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-		<script src="script.js"></script>
+	<script src="jquery-3.3.1.js"></script>	
+	<script src="script.js"></script>
 </head>
 <body>
-	<div id="conteiner-one">
-		<header>
-			<div class="logo"><h2>logo</h2></div>
-			
+	<div class="container-fluid">
+	<div class="row">
+		<div id="conteiner-one" class="col-  col-sm-  col-md- col-lg- col-xl-12">
+		<header >
+			<div class="logo">
+				<h2 class="">logo</h2>
+			</div>
+			<div class="wrapper">
+				<input type="checkbox" id="check-menu">
+				<label  class='label' for="check-menu"></label>
+				<div class="burger-line first"></div>
+				<div class="burger-line second"></div>
+				<div class="burger-line third"></div>
+				<div class="burger-line fourth"></div>
+				<nav class="main-menu">
+					<a class='submenu' href="#">Головна</a>
+					<a class='submenu' href="#">Послуги</a>
+					<a class='submenu' href="#">Проекти</a>
+					<a class='submenu' href="#">Контакти</a>
+	
+				</nav>
+			</div>
 			<div class="list">
-			<select>
-				<option><a>UA</a></option>
-				<option>PL</option>
-				<option>EN</option>
-				<option>RU</option>
-			</select>
-			
+				<div class="dropholder">
+  
+					<div class="dropdown">
+					  <p>UA</p>
+					</div>
+					<ul id="ul" class="menu">
+					  <li>UA</li>
+					  <li>PL</li>
+					  <li>EN</li>
+					  <li>RU</li>
+				  
+					</ul>
+				  </div>
+							
 		</div>
-		<input class="btn-phone" type="button" value="Замовити Дзвінок">
+		
+		<input  class="btn-phone " type="button" value="Замовити Дзвінок">
 		</header>
 		<!-- <h4>Дизайн студія T&#38;M</h4> -->
 		<div class="discript">
 			<h1><strong>Створіть дизайн для свого<br> бізнесу під ключ разом з нами</strong></h1>
-			<h4>Брендування,Web-дизайн,Фото та Ретуш</h4>
+			<h4>Брендування,Веб-розробка,Дизайн</h4>
 		<div class="btn-price"><input id="price" type="button" value="Дізнатись вартість" ></div>
 		</div>
 				
-	</div>
-
-	
-<!--      End block 1        -->
-
-	<div id="block2">
-		
-		<div class="box2discript1">
+		</div>
+		<div id="block2" class="col-  col-sm-  col-md- col-lg- col-xl-">
+			<div class="box2discript1">
 			<h4>Ми впевнені</h4>
-		<h1>Хороший продукт не є випадковим</h1>
+		<h1>Хороший продукт не є випадковим.</h1>
 		</div>
 		<div class="box2discript2">
 		<h4>Наша компанія</h4>
-		<h1>Креативна студія звеликим досвідом та цілком серйозним підходом до своєї справи</h1>
+		<h1>Креативна студія з великим досвідом та <br> цілком серйозним підходом до своєї справи.</h1>
 		</div>
-		<div class="man">
-			<div class="box"></div>
+	<div class="man">
+			<!-- <div class="box"></div> -->
+			<!-- <img src="Img/man.png" alt="superman"> -->
 		</div>
-	</div>
-
-	<div id="block3">
+		
+		</div>
+		<div id="block3" class="col-12 col-sm-12  col-md-12 col-lg-12 col-xl-12">
 		<div class="box3discript1">
 		<h4>Ми пропонуємо</h4>
 		<h1>Ефективні послуги для вашого бізнесу</h1>
@@ -61,39 +85,45 @@
 		<div class="inline-list">
 			<ul>
 				<li><h1>01.</h1>Формуємо візуальну унікальнісьть вашого бренду</li>
-				<li><h1>02.</h1>Підвищуємо рівень продаж вашої компанії</li>
-				<li><h1>03.</h1>Створюємо ваш загальний корпоративний стиль</li>
+				<li><h1>02.</h1>Підвищуємо рівень  вашої компанії</li>
+				<li><h1>03.</h1>Створюємо ваш  загальний корпоративний стиль</li>
 			</ul>
-	
-			</div>
 		</div>
-		
-	</div>
-	<div id="block4">
-		<div class="opasity">
-		<div class="discript-forms">
+		</div>
+		</div>
+		<div id="block4" class="col-sm-  col-md- col-lg- col-xl-">
+			<div class="discript-forms">
 			<h1>Дозвольте нам створити<br> найкращий продукт для вас</h1>
 			<h4> Залиште свої дані,ми зв'яжемось з вами.</h4>
 		</div>
 		<div class="boxs">
 			
-			<section><form >
-				<div>
-		
-		<input type="text" value="" required="">
-		<label>Ваше ім'я</label>
-				</div>
-		<div>
-		<input type="email" value="" required="">
-		<label>Ваш Email</label>
-				</div>
-	<div>
-		
-		<input type="tel" value="" required="">
-		<label>Ваш телефон</label>
-		
-	</div>
-			</form>
+			<section>
+				<div class="form">
+				<form action="#" method="post">
+				
+				  <div class="em emeil">
+					  <input type="text" name="email" id="email_input" placeholder="">
+					  <label for="email_input">
+						  <span> Ваш email</span>
+					  </label>
+				  </div>
+				  
+				  <div class="em name">
+					  <input type="text" name="name" id="name_input">
+					  <label for="name_input">
+						  <span>Ваше ім'я</span>
+					  </label>
+				  </div>    
+			
+				  <div class="input_block">
+					<input type="tel" name="phone" id="phone_input">
+					<label for="phone_input">
+						<span>Ваш телефон</span>
+					</label>
+				</div>    
+			  </form>
+			  </div>
 			<div class="send">
 				<input type="submit" value="Відправити" class="btn-send" >
 		</div>
@@ -102,21 +132,21 @@
 		
 		
 	</div>
-	</div>
-	<div id="block5">
+		
+		<div id="block5" class="col-sm-  col-md- col-lg- col-xl-">
 		<div class="box5discript1">
 		<h4>Наш підхід</h4>
 		<h1>Дбайливо відносимось до своїх клієнтів</h1>
 		<div class="inline-list5">
 		<ul>
-			<li><h1>01.</h1>Вирішуємо завдання,прислуховуємось до побажань</li>
+			<li><h1>01.</h1>Вирішуємо завдання, прислуховуємось до побажань</li>
 			<li><h1>02.</h1>Ретельно працюємо з кожним клієнтом </li>
 			<li><h1>03.</h1>Не ділимо клієнтів на "важливих" та "неважливих"</li>
 		</ul>
 	</div>
 	</div>
-	</div>
-	<div id="block6">
+		</div>
+		<div id="block6" class="dsfd">
 			<div class="box6discript1">	
 				<h4>Наші послуги</h4>
 				<h1>Ми спеціалізуємося</h1>
@@ -126,18 +156,18 @@
 		</div>
 		
 		<div class="tab">
-		
+				
 			<input  id="t1"  type="radio" name="group" checked> 
 			<label for="t1">Брендування</label>
 			<input id="t2" type="radio" name="group">
-			<label for="t2"> Web-дизайн</label>
+			<label for="t2">Веб-Розробка</label>
 			<input id="t3"  type="radio" name="group">
-			<label for="t3">Фото та Ретуш</label>
-		
+			<label for="t3">Дизайн</label>
+			<div class="tabick"></div>
 <div class="tabs">
 	<div  class="tab1"> 
 		
-		<p>Вміст 1</p>
+		<p>Ми експерти у створених логотипів, візуальної ідентичності та розробників ефективного фірмового стилю.</p>
 	</div>
 <div class="tab2"> 
 		
@@ -145,57 +175,65 @@
 </div>
 <div class="tab3"> 
 		
-		<p>Вміст 3</p>
+		<p>У Жолудь ми пропонуємо унікальні проекти по Веб-Дизайну та створенню UI / UX прототипів.</p>
 </div>
 </div>
 		</div>
 	
-	</div>
-
-	<div id="block7">
+		</div>
+		<div id="block7" class="col-sm-  col-md- col-lg- col-xl-">
 		<div class="discript7">
 		<h4>Прямо зараз</h4>
 		<h1>Отримайте знижку - 10%<br>  на другу послугу гарантовано!</h1>
 		<input type="button" value="Оформити заявку" class="request">
 		</div>
-	</div>
-	<div id="block8">
+		</div>
+		<div id="block8" class="col-sm-  col-md- col-lg- col-xl-">
 		
 			
-			<div class="opasity8">
+			
 				<div class="discript-forms8">
 					<h1>Ви ще сумніваєтесь?</h1>
 			<h4> Залиште свої контактні дані і ми розкажемо вам,як наш досвід та професіоналізм зможе підняти ваш бізнес на ще вищу вершину.</h4>
 				</div>
-				<div class="boxs8">
+				<div class="boxs">
 					
-					<section><form >
-						<div>
-				
-				<input type="text" value="" required="">
-				<label>Ваше ім'я</label>
+						<section>
+								<div class="form">
+								<form action="#" method="post">
+								
+								  <div class="em emeil">
+									  <input type="text" name="email" id="email_input" placeholder="">
+									  <label for="email_input">
+										  <span> Ваш email</span>
+									  </label>
+								  </div>
+								  
+								  <div class="em name">
+									  <input type="text" name="name" id="name_input">
+									  <label for="name_input">
+										  <span>Ваше ім'я</span>
+									  </label>
+								  </div>    
+							
+								  <div class="input_block">
+									<input type="tel" name="phone" id="phone_input">
+									<label for="phone_input">
+										<span>Ваш телефон</span>
+									</label>
+								</div>    
+							  </form>
+							  </div>
+							<div class="send">
+								<input type="submit" value="Відправити" class="btn-send" >
 						</div>
-				<div>
-				<input type="email" value="" required="">
-				<label>Ваш Email</label>
-						</div>
-			<div>
-				
-				<input type="tel" value="" required="">
-				<label>Ваш телефон</label>
-				
-			</div>
-					</form>
-					<div class="send8">
-						<input type="submit" value="Відправити" class="btn-send" >
-				</div>
-					</section>
+							</section>>
 				</div>
 				
 				
-			</div>
-	</div>
-	<div id="block9">
+			
+		</div>
+		<div id="block9" class="col-sm-  col-md- col-lg- col-xl-">
 		<div class="about-us">
 		<div class="discript9">
 				<h4>Про нас говорять</h4>
@@ -208,9 +246,9 @@
 				<input  id="t1" type="radio" name="group" checked> 
 				<label for="t1">Брендування</label>
 				<input id="t2" type="radio" name="group">
-				<label for="t2"> Web-дизайн</label>
+				<label for="t2">Веб-розробка</label>
 				<input id="t3" type="radio" name="group">
-				<label for="t3">Фото та Ретуш</label>
+				<label for="t3">Дизайн</label>
 			
 				
 	</div>
@@ -240,9 +278,7 @@
 			</div>
 		</div>		
 		</div>
-
-	
-	<div id="block10">
+		<div id="block10" class="col-sm-  col-md- col-lg- col-xl-">
 		<footer>  
 			<div class="info">
 			<div class="logos"><h2>logo</h2></div>
@@ -257,6 +293,8 @@
 		<a href=""><i class="fab fa-instagram"></i></a>
 		</div>
 		</footer>
+		</div>
+		</div>
 	</div>
 </body>
 </html>

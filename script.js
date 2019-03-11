@@ -14,4 +14,12 @@ $(document).ready(function(){
         else
           $(this).removeClass('has_value');
     });
+  
+
+  $('textarea').change(function() {
+    if($(this).val())
+        $(this).addClass('area');
+      else
+        $(this).removeClass('area');
   });
+});

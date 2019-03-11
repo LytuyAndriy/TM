@@ -30,9 +30,8 @@ header{
   justify-content:space-between;
 }
 .logo {
-  
-  text-align: center;
- top: 55px;
+ /* text-align: center; */
+ top: 100px;
  padding-left: 115px;
  font-size: 27px;
  text-transform: uppercase;
@@ -40,12 +39,18 @@ header{
  /* margin-left: 115px; */
  position: relative;
 }
-.logo h2{
-  position: absolute;
-  height: 38px;
-  width: 110px;
+.logo img{
+  /* position: absolute; */
+  height: 50px;
+  width: 200px;
 }
+/* .logo img:hover{
+  height: 60px;
+  width: 220px
+} */
+
 .wrapper{
+  position: fixed;
  left:305px;
  top: 55px;
   width: 100px;
@@ -146,7 +151,7 @@ header{
   height: 42px;
   width:200px ;
    /* margin-top: 50px; */
-  margin-left:100px;
+  margin-left:44px;
   margin-right: 115px;
   font-size: 14px;
   background-color: rgba( 0,0,0,.1);
@@ -290,12 +295,10 @@ p{
 #price{
   height:60px;
   width:260px;
- color: #080808;
-  
+  color: #080808;
   background-color: #fce205;
   font-size: 22px;
   margin-top: 50px;
- 
   margin-bottom: 260px;
   font-family:TTNorms-Medium;
   border: none;
@@ -414,6 +417,9 @@ font-family:TTNorms-Medium;
   flex-direction: column; 
   justify-content: center;
 }
+.fokyspokys{
+  margin-top: 60px;
+}
 /* .opasity{
   background: #080808;
   opacity:.4;
@@ -422,7 +428,7 @@ font-family:TTNorms-Medium;
 } */
 .discript-forms{
   display: flex;
-  margin-top: 120px;
+  /* margin-top: 120px; */
   width: 100%;
  flex-direction: column;
 }
@@ -438,12 +444,16 @@ font-family:TTNorms-Medium;
 .discript-forms>h4{
   font-size: 26px;
   color: #fff;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 50%;
+  transform: translate(50%);
    text-align: center;
   font-family:OpenSans-Regular;
 }
 
 .boxs{
-  padding-top: 46px;
+  padding-top: 100px;
 }
 /* початок переробленлї форми  */
 
@@ -452,6 +462,7 @@ font-family:TTNorms-Medium;
   /* top: 50%; */
   left:50%;
   width: 700px;
+  height: 340px;
 transform: translate(-50%,-50%);
 }
 .em {
@@ -474,9 +485,9 @@ outline: none;
 
 /* Style from input_blocks */
 .input_block,.em {
-margin: 20px 0 25px 0;
+/* margin: 20px 0 25px 0; */
 width: 344px;
-height: 66px;
+height: 130px;
   position: relative;
 }
 .input_block{
@@ -658,7 +669,7 @@ section div input:focus ~ label {
   /* text-transform: uppercase; */
 }
 section input[type="submit"] {
-   border:1px solid;
+   border:2px solid;
   color: #fff;
   cursor: pointer;
   font-family:TTNorms-Medium;
@@ -682,6 +693,42 @@ section input[type="submit"]:hover {
   padding-top: 150px;
  
   /* зробити кнопку по центру */
+}
+textarea{
+  width: 700px;
+    height: 160px;
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    font-size:24px!important;
+    font-family:TTNorms-Medium !important;
+    padding-left: 10px;
+    resize: none !important;
+    outline: #fce205;
+}
+textarea:focus{
+  color:#fff;
+  border: 2px solid #fce205;
+  font-size:24px;
+  font-family:TTNorms-Medium;
+}
+textarea:focus::placeholder{
+  color:#fff;
+  font-size:24px;
+  font-family:TTNorms-Medium;
+  line-height:32px;
+  
+}
+
+textarea::placeholder{
+  color:#fff;
+  font-size:24px;
+  font-family:TTNorms-Medium;
+ }
+.area{
+  color: #fff;
+  border: 2px solid #fce205;
+line-height:32px;
 }
 
 /* end block4 */
@@ -992,7 +1039,7 @@ section div input:valid ~ label {
 }
 section input[type="submit"] {
   
-  border:1px solid;
+  border:2px solid;
   color: #fff;
   cursor: pointer;
   font-family:TTNorms-Medium;
@@ -1064,7 +1111,7 @@ line-height: 1;
   cursor: pointer;
   padding: 0 32px;
   border-bottom: 3px solid #63636e;
-  padding-top: 150px;
+  padding-top: 215px;
   font-family:OpenSans-Regular
 
 
